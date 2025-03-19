@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Sphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="logo" onclick="reload()">News Sphere</a>
+            <div class="nav-links">
+                <ul class="flex nav-list">
+                    <li class="hover-link nav-items" id="#" onclick="reload()">Home</li>
+
+                    <li><a>Markets</a>
+                    <ul class="sub-menu">
+                        <li class="hover-link nav-items sub-items" id="indian stock exchange" onclick="onNavItemClick('indian stock exchange')">Stocks</li>
+                        <li class="hover-link nav-items sub-items" id="stock exchange" onclick="onNavItemClick('stock exchange')">Global Markets</li>
+                        <li class="hover-link nav-items sub-items" id="indian business" onclick="onNavItemClick('indian business')">Business</li>
+                        <li class="hover-link nav-items sub-items" id="indian exchange" onclick="onNavItemClick('indian exchange')">Currency</li>
+                        <li class="hover-link nav-items sub-items" id="indian real estate" onclick="onNavItemClick('indian real estate')">Real Estate</li>
+                    </ul>
+                    </li>
+
+                    <li><a>Economy & Infra</a>
+                    <ul class="sub-menu">
+                        <li class="hover-link nav-items sub-items" id="indian government policies" onclick="onNavItemClick('indian government policies')">Policies & Initiatives</li>
+                        <li class="hover-link nav-items sub-items" id="indian telecom" onclick="onNavItemClick('indian telecom')">Telecom</li>
+                        <li class="hover-link nav-items sub-items" id="indian agriculture" onclick="onNavItemClick('indian agriculture')">Agriculture</li>
+                        <li class="hover-link nav-items sub-items" id="indian railways" onclick="onNavItemClick('indian railways')">Railways</li>
+                        <li class="hover-link nav-items sub-items" id="indian roadways" onclick="onNavItemClick('indian roadways')">Roadways</li>
+                    </ul>
+                    </li>
+
+                    <li class="hover-link nav-items" id="indian healthcare" onclick="onNavItemClick('indian healthcare')">Healthcare</li>
+
+                    <li class="hover-link nav-items" id="indian jobs" onclick="onNavItemClick('indian jobs')">Jobs</li>
+
+                    <li class="hover-link nav-items" id="indian technology" onclick="onNavItemClick('indian technology')">Tech</li>
+
+                    <li><a>Trending</a>
+                    <ul class="sub-menu">
+                        <li class="hover-link nav-items sub-items" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                        <li class="hover-link nav-items sub-items" id="indian politics" onclick="onNavItemClick('indian politics')">Politics</li>
+                        <li class="hover-link nav-items sub-items" id="fashion" onclick="onNavItemClick('fashion')">Fashion</li>
+                        <li class="hover-link nav-items sub-items" id="movies" onclick="onNavItemClick('movies')">Entertainment</li>
+                    </ul>
+                    </li>                    
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="news-input" placeholder="Eg. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, explicabo?</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="functionality.js"></script>
+</body>
+</html>
